@@ -1,4 +1,4 @@
-export class contaCorrente {
+export class ContaCorrente {
     agencia;
     conta;
     cliente;
@@ -17,9 +17,18 @@ export class contaCorrente {
         this.saldo += valor
     }
 
-    transferir(valor, conta) {
-        const valorSacado = this.sacar(valor);
-        conta.depositar(valorSacado)
+    // transferir(valor, conta) {
+    //     const valorSacado = this.sacar(valor);
+    //     conta.depositar(valorSacado)
+    // }
+
+    static transferencia(contaClientePagante, contaClienteRecebedor, valorDeTransferencia) {
+        if (contaClientePagante.saldo < valorDeTransferencia) {
+            return "Saldo insuficiente"
+        }
+
+        contaClientePagante.sacar(valorDeTransferencia)
+        contaClienteRecebedor.depositar(valorDeTransferencia)
     }
 
 }

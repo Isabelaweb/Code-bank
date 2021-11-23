@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Code Bank - Transações</title>
+</head>
+
+<body>
+    <header class="header-transacoes">
+        <div class="container-header-transacoes">
+            <h1 class="title-transacoes">
+                Code bank
+            </h1>
+            <nav class="nav-transacoes">
+                <ul>
+                    <li>
+                        <a href="index.html">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="transacoes.html">Transaçoes</a>
+                    </li>
+                    <li>
+                        <a href="">Extrato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form class="formulario" id="formulario-deposito">
+            <fieldset>
+                <h3 class="formulario-title">
+                    Depositos
+                </h3>
+                <label class="formulario__label" for="depositar">Digite o valor que deseja
+                    depositar:</label>
+                <input class="formulario__input" type="text" name="depositar" id="depositar">
+            </fieldset>
+        </form>
+
+        <form class="formulario" id="formulario-saques">
+            <fieldset>
+                <h3 class="formulario-title">
+                    Saques
+                </h3>
+                <label class="formulario__label" for="depositar">Digite o valor que deseja sacar:</label>
+                <input class="formulario__input" type="text" name="saques" id="saques">
+            </fieldset>
+        </form>
+        <form class="formulario">
+            <fieldset>
+                <h3 class="formulario-title">
+                    Transferencias
+                </h3>
+                <label class="formulario__label" for="cpfPagante">Digite seu cpf:</label>
+                <input class="formulario__input" type="text" id="cpfPagante" name="cpfPagante">
+
+                <label class="formulario__label" for="valorTransferencia">Digite o valor que deseja tranferir:</label>
+                <input class="formulario__input" type="text" id="valorTransferencia" name="valorTransferencia">
+
+                <label class="formulario__label" for="cpfRecebedor">Digite o cpf do beneficiario:</label>
+                <input class="formulario__input" type="text" id="cpfRecebedor" name="cpfRecebedor">
+            </fieldset>
+        </form>
+        <div class="container-button">
+            <button class="button-transacoes" type="submit">ENVIAR</button>
+        </div>
+
+
+    </main>
+
+</body>
+<script src="index.js"></script>
+
+</html>

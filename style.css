@@ -1,0 +1,89 @@
+.header-transacoes {
+    background-color: #C5B7D9;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.title-transacoes {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+}
+
+.container-header-transacoes {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.nav-transacoes {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.nav-transacoes li {
+    display: inline;
+    font-size: 20px;
+    font-family: roboto;
+    padding: 6px;
+}
+
+.nav-transacoes li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.transacoes {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.formulario-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0 auto;
+    color: #721A8B;
+    font-weight: bold;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    margin: 0 auto;
+}
+
+.formulario .formulario__input {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.formulario .formulario__label {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.button-transacoes {
+    width: 30%;
+    border-radius: 2px;
+}
+
+.container-button {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
