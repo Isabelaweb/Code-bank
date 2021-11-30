@@ -3,6 +3,19 @@ export class ContaCorrente {
     conta;
     cliente;
     saldo = 0;
+
+    get saldo() {
+        return this.saldo
+    }
+
+
+    constructor(agencia, conta, cliente, saldo = 0) {
+        this.agencia = agencia;
+        this.conta = conta;
+        this.cliente = cliente;
+        this.saldo = saldo;
+    }
+
     sacar(valor) {
         if (this.saldo >= valor) {
             this.saldo -= valor
@@ -30,5 +43,7 @@ export class ContaCorrente {
         contaClientePagante.sacar(valorDeTransferencia)
         contaClienteRecebedor.depositar(valorDeTransferencia)
     }
+
+} {
 
 }
