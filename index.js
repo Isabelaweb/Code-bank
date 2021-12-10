@@ -1,11 +1,14 @@
 import { Cliente } from "./Clientes.js";
 import { ContaCorrente } from "./ContaCorrente.js";
+import { ContaPoupanca } from "./ContaPoupanca.js";
+import { Conta } from "./conta.js";
 
 const contas = [];
 
 const adicionarItensLocalStorage = (dados) => {
     localStorage.setItem("contas", JSON.stringify(dados))
 }
+
 
 const $formulario = document.querySelector(".formulario");
 
@@ -18,10 +21,8 @@ $formulario.addEventListener("submit", (recebeEvento) => {
     const agencia = recebeEvento.target.agencia.value;
     const valorDeposito = +recebeEvento.target.depositar.value;
     const conta = +recebeEvento.target.conta.value;
-
     const novoCliente = new Cliente(nome, cpf);
-    // novoCliente.nomeCompleto = nome;
-    // novoCliente.cpf = cpf;
+
 
     const novacontaCorrente = new ContaCorrente(agencia, conta, novoCliente, valorDeposito);
     // novacontaCorrente.agencia = agencia;
@@ -38,5 +39,9 @@ $formulario.addEventListener("submit", (recebeEvento) => {
 
     //   clientes.push(novoCliente, novacontaCorrente);
 
-    console.log(contas);
+    console.log(Conta.numeroDeClientes)
 });
+console.log(contas);
+
+const novaContaPoupanca = new ContaPoupanca(50, "Angela", 1001);
+console.log(novaContaPoupanca)
